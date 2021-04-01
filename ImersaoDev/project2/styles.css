@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', monospace;
+}
+
+
+body{
+    background: center url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-2-calculadora-certa.png') ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.calculator {
+    position: relative;
+    display: grid;
+}
+
+.calculator .value{
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.calculator span{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background: #0c2835;
+    place-items: center;
+    border: 1px solid ;
+    box-shadow: inset 0 0 9px gold;
+    
+}
+
+.calculator span:nth-child(1){
+    box-shadow: inset 0 0 9px #da2866;
+}
+
+.calculator span:nth-child(3n+0){
+    box-shadow: inset 0 0 9px #025880;
+}
+.calculator span:nth-child(14){
+    box-shadow: inset 0 0 9px #025880;
+}
+
+.calculator span:active{
+    filter: brightness(.8);
+    color: #fff;
+}
+
+.calculator span.clear{
+    grid-column: span 2;
+    width: 120px;
+    background: #ff3077;
+}
+
+.calculator span.equal{
+    grid-column: span 2;
+    width: 120px;
+    background: #03b1ff;
+}

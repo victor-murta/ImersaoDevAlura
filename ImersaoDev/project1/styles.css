@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #092164;
+    font-family: 'Ubuntu', 'sans-serif';
+    color: #f9f9f9;
+}
+
+body{
+    width: 100%; 
+}
+
+.line-1,
+.line-2{
+    width: 60px;
+    height: 100vh;
+    background-color: crimson;
+    z-index: 1;
+    position: absolute;
+}
+
+.line-1 {
+    right: 30%;
+}
+
+.line-2{
+    right: 18%;
+}
+
+.h img{
+    width: 29rem;
+    height: 15rem;
+    margin-left: 8rem;
+    margin-top: 25px;
+}
+
+.text-left  {
+    margin: 10rem 0 auto 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-left .t1{
+    font-size: 20px;
+}
+
+.text-left .t1 h3{
+    font-weight: 400;
+    font-size: 69px; 
+    line-height: 7rem;
+}
+
+.text-left .t1 h3 span{
+    padding: 10px;
+    background-color: yellow;
+    color: #092164;
+}
+
+.text-left .t1 p{
+    margin-top: 10px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.text-left .t1 i{
+    height: 15px;
+    width: 15px;
+    color: black;
+}
+
+.text-right  {
+    border: 1px solid #f9f9f9;
+    margin-right: 10rem;
+    padding: 25px;
+    width: 40rem;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.text-right h4{
+    padding: 15px;
+}
+
+
+.text-right .text-info{
+    text-align: center;
+    margin: 39px 0;
+}
+
+.text-right input {
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid rgb(163, 100, 100);
+    width: 100%;
+    color: rgb(228, 133, 152);
+}
+
+.text-right .botao{
+    width: 100%;
+    margin-top: 15px;
+    padding: 13px;
+    border-radius: 15px;
+    background-color: #57d48b;
+    color: #fff;
+    border: none;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.text-right .botao:hover{
+    filter: brightness(0.8);
+}
