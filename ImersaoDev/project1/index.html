@@ -23,11 +23,19 @@
     </div>
     
     <div class = "text-right">
-        <h1 class = "text-info"></h1>
+        <h1 id = 'text-info' class = "text-info">Preço do dólar:  5.71</h1>
         <h4 id="classPrice">Insira o preço em dólar: </h4>
-        <input type="text" placeholder = "U$ ..."></input>
-        <button class="botao">Converter</button>
+        <input type="text" id="pega-valor" placeholder = "U$ ..."></input>
+        <button class="botao" onclick= "calculavalor()" >Converter</button>
     </div>
+    </section>
+    <section id="popup"  class="popup">
+        <div class="parte-escura"></div>
+        <div class="texto">
+            <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png" alt="" onclick="calculavalor()">&times;
+            <p>Valor convertido da pesquisa</p>
+            <h1 id='insere-valor-final'>R$ </h1>
+        </div>
   </section>
   <script src="./script.js"></script>
   
